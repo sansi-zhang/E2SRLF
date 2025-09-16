@@ -44,7 +44,7 @@
 
 - Set the hyper-parameters in parse_args() if needed. We have provided our default settings in the realeased codes.
 - You can train the network by calling implement.py and giving the mode attribute to train.  
-    ``` python implement/implement.py --net Net_Full  --n_epochs 3000 --mode train --device cuda:1 ```
+    ``` python implement/implement.py --net model  --n_epochs 10000 --mode train --device cuda:1 ```
 
 - Checkpoint will be saved to ./param/'NetName'.
   
