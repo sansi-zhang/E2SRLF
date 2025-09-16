@@ -4,7 +4,9 @@
 ## Requirement
 
 - PyTorch >= 1.13.0, torchvision >= 0.15.0. The code is tested with python=3.8, cuda=11.0.
-- A GPU with enough memory
+- A GPU with enough memory.
+- The disparity range is [-4, 4], which means our dilation rate is set to 9.
+
 
 ## Datasets
 
