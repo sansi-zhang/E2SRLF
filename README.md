@@ -3,7 +3,7 @@
 
 ## Requirement
 
-- PyTorch 1.13.0, torchvision 0.15.0. The code is tested with python=3.8, cuda=11.0.
+- PyTorch >= 1.13.0, torchvision >= 0.15.0. The code is tested with python=3.8, cuda=11.0.
 - A GPU with enough memory
 
 ## Datasets
@@ -12,54 +12,30 @@
 - 
 
 ### Path structure
-
+- If not specified, it is a file name; if specified, it is a general term for multiple files.
 ```
 .
 ├── dataset
 │   ├── training
 │   └── validation
 ├── Figure
-│   ├── paper_picture
-│   └── hardware_picture
-├── Hardware
-│   ├── L3FNet
-│   │   ├── bit_files
-│   │   ├── hwh_files
-│   │   └── project_code
-│   ├── Net_prune
-│   │   ├── bit_files
-│   │   └── hwh_files
-│   ├── Net_w2bit
-│   │   ├── bit_files
-│   │   └── hwh_files
-│   └── Net_w8bit
-│       ├── bit_files
-│       └── hwh_files
-├── implement
-│   ├── L3FNet_implementation
-│   └── data_preprocessing
-├── jupyter
-│   ├── network_execution_scripts
-│   └── algorithm_implementation_scripts
+│   └── paper_picture
+├── implement 
+│   ├── implementation  # This is a general term for multiple files.
+│   └── data_preprocessing # This is a general term for multiple files.
 ├── model
-│   ├── network_functions
-│   └── regular_functions
+│   └── network_functions  # This is a general term for multiple files.
 ├── param
-│   └── checkpoints
+│   └── checkpoints 
 └── Results
-    ├── our_network
-    │   ├── Net_Full
-    │   └── Net_Quant
-    ├── Necessity_analysis
-    │   ├── Net_3D
-    │   ├── Net_99
-    │   └── Net_Undpp
-    └── Performance_improvement_analysis
-        ├── Net_Unprune
-        ├── Net_8bit
-        ├── Net_w2bit
-        ├── Net_w8bit
-        └── Net_prune
+    ├── our_network  # This is a general term for multiple files.
+    │   ├── E2SRLF
+    │   └── E2SRLF_x1
+    └── Analysis
+        ├── E2SRLF_NAT # This is a general term for multiple files.
+        ├── E2SRLF_SACAT
+        └── E2SRLF_SRL1
+
 ```
 
 ### Train
