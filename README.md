@@ -21,18 +21,18 @@
 ├── Figure
 │   └── paper_picture
 ├── implement 
-│   ├── implementation  # This is a general term for multiple files.
+│   ├── implementation     # This is a general term for multiple files.
 │   └── data_preprocessing # This is a general term for multiple files.
 ├── model
 │   └── network_functions  # This is a general term for multiple files.
 ├── param
 │   └── checkpoints 
 └── Results
-    ├── our_network  # This is a general term for multiple files.
+    ├── our_network        # This is a general term for multiple files.
     │   ├── E2SRLF
     │   └── E2SRLF_x1
-    └── Analysis
-        ├── E2SRLF_NAT # This is a general term for multiple files.
+    └── Analysis           # This is a general term for multiple files.
+        ├── E2SRLF_NAT 
         ├── E2SRLF_SACAT
         └── E2SRLF_SRL1
 
