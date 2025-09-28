@@ -66,8 +66,8 @@ class Train(object):
             from model.model_NAT import Net 
         else:
             from model.model import Net
-            print("Using sub_pix + attention + amend2 model.")
-            print("Sub4 use pre-agg-sr!!")
+            print("Using sub_pix + attention model.")
+            print("Use pre-agg-sr!!")
             
         net = Net(cfg)
 
