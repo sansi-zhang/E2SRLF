@@ -119,8 +119,8 @@ class Train(object):
         epoch_history = []
 
         L1_loss_rate = 1.0
-        Super_loss_rate = 0.8
-        Sub_loss_rate = 0.2
+        Super_loss_rate = 1.0
+        Sub_loss_rate = 0.5
         
         for idx_epoch in range(epoch_state, cfg.n_epochs):
             
