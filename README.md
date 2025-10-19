@@ -15,7 +15,9 @@ Unlike traditional methods that only estimate disparity at the same resolution a
 * **High-Low Resolution Collaborative Constraint Loss (HLLoss)**
   Introduces joint HR and LR constraints during training to enhance generalization and robustness.
 
-The **network architecture** is illustrated in **Fig.2**.
+The **network architecture** is illustrated in ``E2SRLF.jpg``
+<br>
+<img src="Figure/paper_picture/E2SRLF.jpg" width="70%">
 
 ---
 
@@ -26,7 +28,9 @@ The **network architecture** is illustrated in **Fig.2**.
 * **SSFU** enables interaction between spatial and disparity dimensions, improving SR accuracy.
 * **HLLoss** ensures learning stability by enforcing constraints at both HR and LR levels.
 
-**Comparison results** (Fig.xxx) show that E2SRLF outperforms existing methods on both synthetic and real-world datasets, particularly in fine detail preservation and occlusion handling.
+**Comparison results** Figures in "Figure/paper_picture" show that E2SRLF outperforms existing methods on both synthetic and real-world datasets, particularly in fine detail preservation and occlusion handling.
+<img src="Figure/paper_picture/compare.jpg" width="70%">
+<img src="Figure/paper_picture/Table2" width="70%">
 
 ---
 
@@ -35,7 +39,8 @@ The **network architecture** is illustrated in **Fig.2**.
 * PyTorch >= 1.13.0, torchvision >= 0.15.0
 * Python = 3.8, CUDA = 11.0
 * A GPU with sufficient memory
-* Disparity range is [-4, 4], corresponding to dilation rate = 9
+* The training disparity range is [-2, 2], after 2× upscaling, the disparity range becomes [-4, 4]
+* Since the angular resolution is 9, the dilation rate of the dilated convolutions used in the cost volume construction within the network is also set to 9.
 
 ---
 
@@ -105,15 +110,14 @@ The **network architecture** is illustrated in **Fig.2**.
 ### Comparison with State-of-the-Art
 
 * On **HCI 4D Light Field Benchmark**, E2SRLF achieves lower **MSE** and higher **PSNR/SSIM** compared to traditional depth estimation and two-stage SR methods (e.g., **SR-Distg**, **SR-MRAE**) (see Table I, II).
-* **Qualitative results** (Fig.xxx) show:
-
+* **Qualitative results** Figure ``compare.jpg`` shows:
   * **E2SRLF x1** achieves comparable or better performance than several existing methods under LR settings.
   * **E2SRLF** significantly outperforms two-stage methods in HR, offering sharper details and better occlusion handling.
 
 ### Ablation Studies
 
-* **MDCAT**: Adding **SACAT** and **DCAT** sequentially leads to significant accuracy improvements (Table III, Fig.9).
-* **HLLoss**: Adding LR constraints further enhances generalization and stability (Table IV, Fig.9).
+* **MDCAT**: Adding **SACAT** and **DCAT** sequentially leads to significant accuracy improvements (Table III, ``compare_ab.jpg``).
+* **HLLoss**: Adding LR constraints further enhances generalization and stability (Table IV, ``compare_ab.jpg``).
 
 ---
 
