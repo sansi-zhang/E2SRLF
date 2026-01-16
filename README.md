@@ -126,10 +126,15 @@ The **network architecture** is illustrated in ``E2SRLF.jpg``
 If you use this code or model, please cite our paper:
 
 ```
-@article{E2SRLF2025,
-  title={E2SRLF: End-to-End Light Field Image Super-Resolution Depth Estimation},
-  author={Jie Li and Chuanlun Zhang and Xiaoyan Wang and Xinjia Li and Lin Wang and Yuxin Zeng and Yiguang Liu},
-  year={2025}
-}
+@ARTICLE{11333381,
+  author={Li, Jie and Zhang, Chuanlun and Wang, Xiaoyan and Li, Xinjia and Wang, Lin and Zeng, Yuxin and Liu, Yiguang},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  title={E2SRLF: End-to-End Light Field Image Super-Resolution Depth Estimation}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Spatial resolution;Depth measurement;Light fields;Superresolution;Feature extraction;Estimation;Videos;Transformers;Image reconstruction;Costs;light field;depth estimation;end-to-end;super-resolution},
+  doi={10.1109/TCSVT.2026.3651331}}
 ```
 
